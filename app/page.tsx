@@ -134,21 +134,21 @@ export default function HovrWebsite() {
 
           <div>
             <h2 className="text-4xl font-bold mb-6">
-              Simple, Fast & Reliable Helicopter Booking Assistance
+              Simple, Fast & Reliable
             </h2>
 
             <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
 
               <p>
-                • We connect clients with suitable helicopter charter options through verified aviation operator networks across India.
+                • Fast communication, Transparent guidance, and Explore Available options quickly.
               </p>
 
               <p>
-                • Whether it’s pilgrimage travel, wedding events, or urgent travel needs, we help simplify the coordination process.
+               • We connect clients with verified charter operators across India. 
               </p>
 
               <p>
-                • Our focus is fast communication, transparent guidance, and helping clients explore available options quickly.
+                 • We help simplify the coordination process.
               </p>
 
             </div>
