@@ -37,7 +37,7 @@ export default function HovrWebsite() {
           }}
         />
 
-        {/* OVERLAY */}
+        {/* DARK OVERLAY */}
         <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]" />
 
         {/* CONTENT */}
