@@ -33,7 +33,7 @@ export default function HovrWebsite() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/helicopter.jpg')",
+            backgroundImage: "url('/Ladakh.webp')",
           }}
         />
 
