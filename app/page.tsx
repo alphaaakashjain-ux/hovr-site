@@ -6,6 +6,23 @@ export default function HovrWebsite() {
   const whatsappLink =
     "https://wa.me/919664088876?text=Hello%20Hindustan%20Helicopters%0A%0AI%20would%20like%20a%20helicopter%20quotation.%0A%0AName%3A%20%0ADestination%3A%20%0ATravel%20Date%3A%20%0ANumber%20of%20Passengers%3A%20%0AAdditional%20Requirements%3A%20";
 
+  // GOOGLE ADS CONVERSION TRACKING
+  const gtag_report_conversion = (url: string) => {
+    const callback = () => {
+      if (typeof url !== "undefined") {
+        window.location.href = url;
+      }
+    };
+
+    // @ts-ignore
+    window.gtag("event", "conversion", {
+      send_to: "AW-18180951435/dzzsCMWOs7EcEIubrd1D",
+      event_callback: callback,
+    });
+
+    return false;
+  };
+
   // SLIDESHOW IMAGES
   const whyImages = [
     "/Kedarnath.png",
@@ -44,8 +61,6 @@ export default function HovrWebsite() {
         <div className="relative max-w-6xl mx-auto px-6 py-28 md:py-36">
           <div className="max-w-3xl">
 
-            {/* LOGO */}
-
             <p className="text-sm uppercase tracking-[0.25em] text-sky-200 mb-6">
               PAN India Helicopter Assistance
             </p>
@@ -60,15 +75,18 @@ export default function HovrWebsite() {
 
             <div className="flex flex-col sm:flex-row gap-4">
 
+              {/* WHATSAPP BUTTON */}
               <a
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => gtag_report_conversion(whatsappLink)}
                 className="bg-green-500 hover:bg-green-600 transition text-white px-8 py-4 rounded-2xl font-semibold text-center shadow-lg"
               >
                 Get Quote on WhatsApp
               </a>
 
+              {/* CALL BUTTON */}
               <a
                 href="tel:+919664088876"
                 className="border border-white/40 hover:bg-white hover:text-black transition text-white px-8 py-4 rounded-2xl font-semibold text-center"
@@ -253,6 +271,7 @@ export default function HovrWebsite() {
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => gtag_report_conversion(whatsappLink)}
             className="bg-green-500 hover:bg-green-600 transition px-10 py-5 rounded-2xl text-lg font-semibold inline-block shadow-lg"
           >
             WhatsApp Now
