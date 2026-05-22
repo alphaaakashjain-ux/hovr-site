@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 export default function HovrWebsite() {
   const whatsappLink =
-  "https://wa.me/353899652412?text=Hello%20Hindustan%20Helicopters%0A%0AI%20would%20like%20a%20helicopter%20quotation.%0A%0AName%3A%20%0ADestination%3A%20%0ATravel%20Date%3A%20%0ANumber%20of%20Passengers%3A%20%0AAdditional%20Requirements%3A%20";
+  "https://wa.me/919664088876?text=Hello%20Hindustan%20Helicopters%0A%0AI%20would%20like%20a%20helicopter%20quotation.%0A%0AName%3A%20%0ADestination%3A%20%0ATravel%20Date%3A%20%0ANumber%20of%20Passengers%3A%20%0AAdditional%20Requirements%3A%20";
 
   // WHY SECTION SLIDESHOW
   const whyImages = [
@@ -66,7 +66,7 @@ export default function HovrWebsite() {
               </a>
 
               <a
-                href="tel:+353899652412"
+                href="tel:+919664088876"
                 className="border border-white/40 hover:bg-white hover:text-black transition text-white px-8 py-4 rounded-2xl font-semibold text-center"
               >
                 Call Now
