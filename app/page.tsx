@@ -46,7 +46,7 @@ export default function HovrWebsite() {
 
             {/* LOGO */}
             <img
-              src="/logo-1.png"
+              src="/HH.png"
               alt="Hindustan Helicopters Logo"
               className="h-20 w-auto mb-6"
             />
