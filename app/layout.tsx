@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: "Hindustan Helicopters",
@@ -9,11 +10,13 @@ export const metadata: Metadata = {
   },
 };
 
+type RootLayoutProps = {
+  children: ReactNode;
+};
+
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode;
-}) {
+}: RootLayoutProps) {
   return (
     <html lang="en">
       <body>{children}</body>
