@@ -1,12 +1,19 @@
-export const metadata = {
+import "./globals.css";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Hindustan Helicopters",
-  description: "PAN India Helicopter Booking Assistance",
+  description: "PAN India Helicopter Assistance",
   icons: {
     icon: "/logo.png",
   },
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body>{children}</body>
