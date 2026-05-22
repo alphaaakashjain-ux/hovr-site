@@ -4,13 +4,13 @@ import { useEffect, useState } from "react";
 
 export default function HovrWebsite() {
   const whatsappLink =
-  "https://wa.me/919664088876?text=Hello%20Hindustan%20Helicopters%0A%0AI%20would%20like%20a%20helicopter%20quotation.%0A%0AName%3A%20%0ADestination%3A%20%0ATravel%20Date%3A%20%0ANumber%20of%20Passengers%3A%20%0AAdditional%20Requirements%3A%20";
+    "https://wa.me/919664088876?text=Hello%20Hindustan%20Helicopters%0A%0AI%20would%20like%20a%20helicopter%20quotation.%0A%0AName%3A%20%0ADestination%3A%20%0ATravel%20Date%3A%20%0ANumber%20of%20Passengers%3A%20%0AAdditional%20Requirements%3A%20";
 
-  // WHY SECTION SLIDESHOW
+  // SLIDESHOW IMAGES
   const whyImages = [
     "/Kedarnath.png",
-    "/Taj Mahal.png",
-    "/Hawa Mahal.jpg",
+    "/taj-mahal.png",
+    "/hawa-mahal.jpg",
   ];
 
   const [whyIndex, setWhyIndex] = useState(0);
@@ -26,10 +26,10 @@ export default function HovrWebsite() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
 
-      {/* HERO */}
+      {/* HERO SECTION */}
       <section className="relative overflow-hidden">
-        
-        {/* Background Image */}
+
+        {/* BACKGROUND IMAGE */}
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -37,30 +37,39 @@ export default function HovrWebsite() {
           }}
         />
 
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/45" />
+        {/* OVERLAY */}
+        <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]" />
 
-        {/* Content */}
+        {/* CONTENT */}
         <div className="relative max-w-6xl mx-auto px-6 py-28 md:py-36">
           <div className="max-w-3xl">
 
-            <h1 className="text-3xl md:text-6xl font-bold leading-tight mb-7 text-white">
+            {/* LOGO */}
+            <img
+              src="/logo.png"
+              alt="Hindustan Helicopters Logo"
+              className="h-20 w-auto mb-6"
+            />
+
+            <p className="text-sm uppercase tracking-[0.25em] text-sky-200 mb-6">
+              PAN India Helicopter Assistance
+            </p>
+
+            <h1 className="text-4xl md:text-7xl font-bold leading-tight mb-6 text-white">
               Hindustan Helicopters
             </h1>
 
-            <p className="text-lg md:text-xl uppercase text-gray-200 mb-8">
+            <p className="text-lg md:text-xl uppercase text-gray-200 mb-10 leading-relaxed">
               Pilgrimage • Weddings • VIP Travel • Tourism • Emergency Services
             </p>
 
-            <p className="text-sm uppercase tracking-widest text-sky-200 mb-8">
-              Book anytime, book anywhere.
-            </p>
-
             <div className="flex flex-col sm:flex-row gap-4">
+
               <a
                 href={whatsappLink}
                 target="_blank"
-                className="bg-green-500 hover:bg-green-600 transition text-white px-8 py-4 rounded-2xl font-semibold text-center"
+                rel="noopener noreferrer"
+                className="bg-green-500 hover:bg-green-600 transition text-white px-8 py-4 rounded-2xl font-semibold text-center shadow-lg"
               >
                 Get Quote on WhatsApp
               </a>
@@ -71,27 +80,31 @@ export default function HovrWebsite() {
               >
                 Call Now
               </a>
+
             </div>
 
           </div>
         </div>
       </section>
 
-      {/* SERVICES */}
+      {/* SERVICES SECTION */}
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6">
 
           <div className="text-center mb-16">
+
             <h2 className="text-4xl font-bold mb-4">
               PAN India Helicopter Services
             </h2>
 
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We help arrange helicopter charter coordination across India for pilgrimage, travel, and special events.
+              We help arrange helicopter charter coordination across India for pilgrimage travel, wedding events, tourism, and private helicopter requirements.
             </p>
+
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
             {[
               {
                 title: "Kedarnath Yatra",
@@ -99,15 +112,15 @@ export default function HovrWebsite() {
               },
               {
                 title: "Wedding Entry",
-                desc: "Luxury helicopter entry coordination for weddings and grand events.",
+                desc: "Luxury helicopter entry coordination for weddings and grand celebrations.",
               },
               {
                 title: "Private Travel",
-                desc: "City-to-city helicopter charter assistance for VIP travel.",
+                desc: "City-to-city helicopter charter assistance for VIP and private travel.",
               },
               {
                 title: "Emergency Support",
-                desc: "Urgent helicopter coordination support depending on availability.",
+                desc: "Urgent helicopter coordination support depending on route and availability.",
               },
             ].map((item) => (
               <div
@@ -123,8 +136,8 @@ export default function HovrWebsite() {
                 </p>
               </div>
             ))}
-          </div>
 
+          </div>
         </div>
       </section>
 
@@ -132,7 +145,9 @@ export default function HovrWebsite() {
       <section className="bg-slate-50 py-24">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
 
+          {/* TEXT */}
           <div>
+
             <h2 className="text-4xl font-bold mb-6">
               Simple, Fast & Reliable
             </h2>
@@ -140,18 +155,19 @@ export default function HovrWebsite() {
             <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
 
               <p>
-                • Fast communication, Transparent guidance, and Explore Available options quickly.
+                • Fast communication and transparent booking assistance for helicopter travel across India.
               </p>
 
               <p>
-               • We connect clients with verified charter operators across India. 
+                • We connect clients with verified charter operators for pilgrimage, weddings, VIP travel, and tourism.
               </p>
 
               <p>
-                 • We help simplify the coordination process.
+                • Our goal is to simplify the booking process and help you explore suitable options quickly.
               </p>
 
             </div>
+
           </div>
 
           {/* SLIDESHOW */}
@@ -164,7 +180,6 @@ export default function HovrWebsite() {
               }}
             />
 
-            {/* Overlay */}
             <div className="absolute inset-0 bg-black/20" />
 
           </div>
@@ -177,6 +192,7 @@ export default function HovrWebsite() {
         <div className="max-w-4xl mx-auto px-6">
 
           <div className="text-center mb-14">
+
             <h2 className="text-4xl font-bold mb-4">
               Frequently Asked Questions
             </h2>
@@ -184,6 +200,7 @@ export default function HovrWebsite() {
             <p className="text-lg text-gray-600">
               Common questions from customers.
             </p>
+
           </div>
 
           <div className="space-y-6">
@@ -219,12 +236,13 @@ export default function HovrWebsite() {
                 </p>
               </div>
             ))}
+
           </div>
 
         </div>
       </section>
 
-      {/* CTA */}
+      {/* CTA SECTION */}
       <section className="bg-black text-white py-24">
         <div className="max-w-5xl mx-auto px-6 text-center">
 
@@ -232,14 +250,15 @@ export default function HovrWebsite() {
             Need a Helicopter Booking?
           </h2>
 
-          <p className="text-xl text-gray-300 mb-10">
-            Share your travel dates and destination to get available helicopter options.
+          <p className="text-xl text-gray-300 mb-10 leading-relaxed">
+            Share your travel destination, passenger count, and preferred dates to explore available helicopter charter options.
           </p>
 
           <a
             href={whatsappLink}
             target="_blank"
-            className="bg-green-500 hover:bg-green-600 transition px-10 py-5 rounded-2xl text-lg font-semibold inline-block"
+            rel="noopener noreferrer"
+            className="bg-green-500 hover:bg-green-600 transition px-10 py-5 rounded-2xl text-lg font-semibold inline-block shadow-lg"
           >
             WhatsApp Now
           </a>
@@ -249,7 +268,7 @@ export default function HovrWebsite() {
 
       {/* FOOTER */}
       <footer className="bg-white py-8 text-center text-gray-500 text-sm border-t">
-        © 2026 A SmartCity Solutions Product.
+        © 2026 Hindustan Helicopters. All rights reserved.
       </footer>
 
     </div>
